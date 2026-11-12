@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fondo: #FAF9F6;
+    --color-presentacion: #F0ECE5;
+    --color-tarjeta: #EAE3D8;
+    --color-acento: #A58C73;
+    --color-texto: #343A40;
+    --color-enlace: #435968;
+    --fuente-principal: "Liberation Sans", Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header,
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+header {
+    font-weight: bold;
+}
+
+main {
+    padding-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+a {
+    color: var(--color-enlace);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 32px;
+    margin-bottom: 32px;
+    background-color: var(--color-presentacion);
+    border: 1px solid var(--color-acento);
+    border-radius: 12px;
+}
+
+.imagen-presentacion img {
+    display: block;
+    border-radius: 12px;
+}
+
+.enlaces-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.boton-cv {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid var(--color-acento);
+    border-radius: 6px;
+    color: var(--color-texto);
+    background-color: var(--color-tarjeta);
+    text-decoration: none;
+}
+
+.tarjetas-proyectos {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 20px;
+}
+
+.tarjeta-proyecto {
+    padding: 24px;
+    background-color: var(--color-tarjeta);
+    border: 1px solid var(--color-acento);
+    border-radius: 12px;
+}
+
+.proyecto-destacado {
+    grid-row: span 2;
+}
+
+.tarjeta-proyecto a {
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+    .presentacion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .tarjetas-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-destacado {
+        grid-row: auto;
+    }
+}

@@ -1,0 +1,10 @@
+Crear un página web personal que sirva como portfolio que tenga, al menos, los siguientes elementos:
+
+    Una imagen (no hace falta que sea una foto, puede ser una caricatura o una imagen de algo que le guste al estudiante y/o le represente)
+    El nombre y apellidos del estudiante
+    Enlaces al LinkedIn, al GitHub y al correo electrónico del estudiante
+    Un botón/enlace para descargar el CV del estudiante
+    Una sección en la que se muestren previsualizaciones de proyectos realizados por el estudiante y que enlacen a dichos proyectos
+    Una sección con la experiencia laboral del estudiante, en caso de que la tenga
+    Una sección con los estudios previos y actuales del estudiante
+
